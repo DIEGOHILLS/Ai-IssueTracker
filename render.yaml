@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: issue-tracker
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: VITE_OPENAI_API_KEY
+        fromSecret: true
+    staticPublishPath: dist
