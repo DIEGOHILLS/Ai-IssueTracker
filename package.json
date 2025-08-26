@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "node server/index.mjs",
+    "start": "vite preview --port $PORT",
     "type": "module"
   },
   "dependencies": {
